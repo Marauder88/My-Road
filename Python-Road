@@ -1,0 +1,16 @@
+# the first code after learning basics its just an interaction if two characters, male and female but it will evolve making it more advanced and more complex
+
+k = "she loves"
+h = "my fast car"
+j = "I have a powerful engine"
+f ="I am fast"
+p = "I win races"
+s = "my name is Sebas, nice to meet you"
+b = "what is your name"
+g = "good morning"
+e = "time to make some money"
+good = ("I said", g, b, 'she replied : Ada then I replied', s )
+times =('the truth is that ', k,  h, j )
+red = ("I have pride on my car", f, "so", p, "but now is", e)
+
+print ({good + times + red})
