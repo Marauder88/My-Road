@@ -1,5 +1,6 @@
 # the first code after learning basics its just an interaction if two characters, male and female but it will evolve making it more advanced and more complex
 
+#PHASE 1
 k = "she loves"
 h = "my fast car"
 j = "I have a powerful engine"
@@ -14,3 +15,13 @@ times =('the truth is that ', k,  h, j )
 red = ("I have pride on my car", f, "so", p, "but now is", e)
 
 print ({good + times + red})
+
+
+#PHASE 2
+print  ('hey wassyp I am {} .', format('sebas'))
+conv = 'she replied with a "i am Ada nice to meet you Sebas'
+
+conv1 = "she loves my car"
+conv2 = "has a powerful engine"
+conv3 = 'I win races'
+conv4 = 'I am fast'
