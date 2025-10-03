@@ -25,3 +25,16 @@ conv1 = "she loves my car"
 conv2 = "has a powerful engine"
 conv3 = 'I win races'
 conv4 = 'I am fast'
+
+
+#PHASE 3 
+print ('hey sir welcome to our dealership which car brand are you intrested in? ', end = ' ')
+a1 = input ()
+print ('which model are you looking for? ', end = ' ')
+a2 = input ()
+print ('from which year sir?', end =' ')
+a3 = input ()
+print ('and what is your budget sir? ', end =' ')
+a4 = input ()
+
+print (f'understood sir you are looking for a {a1}, model {a2}, from the year {a3} and your current budget is {a4}')
