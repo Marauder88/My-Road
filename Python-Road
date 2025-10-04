@@ -1,6 +1,6 @@
 # the first code after learning basics its just an interaction if two characters, male and female but it will evolve making it more advanced and more complex
 
-#PHASE 1
+#CONVERSATION / 1
 k = "she loves"
 h = "my fast car"
 j = "I have a powerful engine"
@@ -17,7 +17,7 @@ red = ("I have pride on my car", f, "so", p, "but now is", e)
 print ({good + times + red})
 
 
-#PHASE 2
+#CONVERSATION / 2
 print  ('hey wassyp I am {} .', format('sebas'))
 conv = 'she replied with a "i am Ada nice to meet you Sebas'
 
@@ -27,7 +27,7 @@ conv3 = 'I win races'
 conv4 = 'I am fast'
 
 
-#PHASE 3 
+#CAR-DEALERSHIP / 1 
 print ('hey sir welcome to our dealership which car brand are you intrested in? ', end = ' ')
 a1 = input ()
 print ('which model are you looking for? ', end = ' ')
