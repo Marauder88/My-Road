@@ -38,3 +38,14 @@ print ('and what is your budget sir? ', end =' ')
 a4 = input ()
 
 print (f'understood sir you are looking for a {a1}, model {a2}, from the year {a3} and your current budget is {a4}')
+
+#CAR-DEALERSHIP / 2
+
+welcome = input('Good afternoon sir Welcome to Max Race dealership what is your name? ')
+car = input ('which car are you looking for? ')
+model = input ('that sounds great what about the model? ')
+year = input (f'we are almost done Mr {welcome} what about the year of the model?')
+budget = input(f' Understood Mr {welcome} my final question is what is your current budget?')
+
+print (f'those are great news, if that is the case depending on your budget of {budget} dollars we do have a {car} {model} of the year {year}')
+print (f'thank you for the purhase Mr {welcome}!')
