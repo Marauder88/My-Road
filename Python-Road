@@ -28,6 +28,15 @@ conv3 = 'win races'
 conv4 = 'I am fast'
 print (f'I could notice that {conv1} because I got a {conv2}, that is why {conv4} and I always {conv3}')
 
+#CONVERSATION / 3
+
+
+mt = input ('hey I like your car whats your name? ')
+mt1 = input (f'Oh nice to meet you {mt} my name is Ada that is a nice car which model is it? ')
+mt2 = input(f'O wow {mt} I can tell it is a {mt1} it sounds really good, can I come with you? ')
+
+print ('alright lets go then!')
+
 
 
 #CAR-DEALERSHIP / 1 
