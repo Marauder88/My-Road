@@ -18,13 +18,16 @@ print ({good + times + red})
 
 
 #CONVERSATION / 2
-print  ('hey wassyp I am {} .', format('sebas'))
-conv = 'she replied with a "i am Ada nice to meet you Sebas'
+
+print  ('one day driving past a gas station I met a girl \"hey wassup I am {} \" I said'.format('juan'))
+conv = 'she replied with a "i am Ada nice to meet you Sebas"'
 
 conv1 = "she loves my car"
-conv2 = "has a powerful engine"
-conv3 = 'I win races'
+conv2 = "powerful engine"
+conv3 = 'win races'
 conv4 = 'I am fast'
+print (f'I could notice that {conv1} because I got a {conv2}, that is why {conv4} and I always {conv3}')
+
 
 
 #CAR-DEALERSHIP / 1 
