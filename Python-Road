@@ -62,3 +62,23 @@ budget = input(f' Understood Mr {welcome} my final question is what is your curr
 
 print (f'those are great news, if that is the case depending on your budget of {budget} dollars we do have a {car} {model} of the year {year}')
 print (f'thank you for the purhase Mr {welcome}!')
+
+
+#CAR DEALERSHIP / 3
+from sys import argv
+
+dealership = argv
+
+print (f'\N{Rightwards Arrow} welcome to the {dealership} car dealership sir')
+
+name = input (f'< what is your name sir?: ')
+
+brand = input (f'< which brand of veichles are you looking for{name}?: ')
+
+print (f'\N{Rightwards Arrow} Got it {name} you are looking for a {brand} car brand we do have those available')
+
+car = input (f'< and which type of veichles from the {brand} brand are you looking into mister {name}?')
+
+budget = input (f'< what current budget you got available?: ')
+
+print (f'Got it{name}! you are looking to buy a {brand} {car} with a budget of ${budget} sounds good')
