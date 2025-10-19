@@ -1,0 +1,19 @@
+#DRONE 
+
+from sys import argv 
+
+layer, User= argv 
+
+print (f'''welcome to the layer {layer} User
+       Your name is registered as {User}''')
+
+target = input (f'\N{Greek Capital Letter Omega}  {User} chose your target: ')
+
+print (f'target  {target} has been locked in sight')
+
+action = input (f'\N{Greek Capital Letter Omega}   {User} Chose the action to be taken: ')
+
+print (f'Roger that, the target called {target} will be {action}')
+
+#//////////////////////////////////////////////////////////
+
