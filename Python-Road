@@ -67,18 +67,23 @@ print (f'thank you for the purhase Mr {welcome}!')
 #CAR DEALERSHIP / 3
 from sys import argv
 
-dealership = argv
+file = argv
 
-print (f'\N{Rightwards Arrow} welcome to the {dealership} car dealership sir')
+s = " < "
 
-name = input (f'< what is your name sir?: ')
+print (f'welcome to the {file} car dealership, what is your name?')
+name = input(s) 
 
-brand = input (f'< which brand of veichles are you looking for{name}?: ')
+print (f'good to meet you {name}! which veichle brand are you intrested in? ')
+brand = input(s)
 
-print (f'\N{Rightwards Arrow} Got it {name} you are looking for a {brand} car brand we do have those available')
+print (f'model?')
+model = input(s)
 
-car = input (f'< and which type of veichles from the {brand} brand are you looking into mister {name}?')
+print (f' so you are looking for a {brand} {model} veichle, which year edition {name}?')
+year = input(s)
 
-budget = input (f'< what current budget you got available?: ')
+print(f' that is awesome and what about your budget?')
+budget = input(s)
 
-print (f'Got it{name}! you are looking to buy a {brand} {car} with a budget of ${budget} sounds good')
+print (f'good to know {name} with a budget of {budget} you can definetly purchase a {brand} {model} {year} year edition, have a good day')
