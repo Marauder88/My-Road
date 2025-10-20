@@ -15,5 +15,31 @@ action = input (f'\N{Greek Capital Letter Omega}   {User} Chose the action to be
 
 print (f'Roger that, the target called {target} will be {action}')
 
-#//////////////////////////////////////////////////////////
+--------------------------------------------------------------------------------------------
+
+
+
+#DEFIANT PROGRAM
+
+from sys import argv
+
+arrow = '\N{Rightwards Arrow}'
+down = '\N{Downwards Arrow}'
+
+file, page = argv 
+
+print (f'here is your file name: {arrow} {file}')
+
+text = open(page)
+print (f'this is the content inside the file called {page} {arrow} {text.read()}')
+
+print ('do you want me to print out the file again ??')
+
+var = input(arrow)
+pybeast = '{} {} {} {}'
+
+print (f' you said {var}?, I dont care I am doing it anyways {pybeast.format(down,down,down,down)}')
+
+text = open(page)
+print (text.read())
 
