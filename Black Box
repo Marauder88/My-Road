@@ -17,8 +17,6 @@ print (f'Roger that, the target called {target} will be {action}')
 
 --------------------------------------------------------------------------------------------
 
-
-
 #DEFIANT PROGRAM
 
 from sys import argv
@@ -43,3 +41,38 @@ print (f' you said {var}?, I dont care I am doing it anyways {pybeast.format(dow
 text = open(page)
 print (text.read())
 
+--------------------------------------------------------------------------------------------------
+
+#FILE TEXT EDITOR
+
+from sys import argv 
+
+file, script = argv
+
+print (f'Welcome to the {file} terminal, you will edit a script called {script}')
+m = '\N{Rightwards Arrow}'
+input (f'Press RETURN key to continue or press CTRL-C to quit {m}')
+
+text = open(script)
+print (f'''The current content of the script is: ''')
+print (m, text.read())
+
+print (f'lets start editing the script')
+
+input (f'{m} to continue press the RETURN key, to quit press CTRL - C')
+
+text = open(script, 'w')
+text.truncate()
+
+print ('the file has been cleaned from previous text lines, lets write some lines in the empty file ')
+l1 = input (f'first line {m}')
+l2 = input (f'second line {m}')
+
+text.write(l1)
+text.write(' ')
+text.write(l2)
+
+text = open(script)
+
+print (f'now the content of the file says {m} {text.read()}')
+text.close()
