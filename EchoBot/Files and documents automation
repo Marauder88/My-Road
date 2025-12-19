@@ -1,0 +1,59 @@
+from sys import argv
+
+file, script = argv
+
+print ('welcome to Echo bot user, what is your name user?')
+name = input (' > ')
+
+print (f'welcome to my domain {name}')
+
+print ('in here my only ability so far is editing files press CTRL-C to quit the proccess or RETURN to continue')
+
+input ('> ')
+
+print (f'Opening the script {name} wait a moment...')
+
+text = open(script)
+
+print (f'got it {name} the only script you have here so far is {script} I will erase its content')
+
+read = text.read()
+print (read)
+
+finish = text.close
+
+input ('If you wish to edit this file press ENTER, to quit press CTRL-C')
+
+read = open(script, 'w')
+
+print (f'got it {name} reseting the file in process, do not close the program...')
+
+read.truncate
+
+print (f'{name} the file has been reseted successfully')
+
+input ('to continue into editing the file press ENTER, to cancel press CTRL-C')
+
+text = open(script, 'w')
+
+print ('write what goes in Line 1: ')
+line1 = input ('> ')
+print ('write what goes in line 2: ')
+line2 = input('> ')
+print (f'now final line {name} type wethever you want')
+line3 = input ('> ')
+
+print (f' Applying changes now.....')
+
+text.write('\n\t> ')
+text.write(line1)
+text.write('\n\t> ')
+text.write(line2)
+text.write('\n\t> ')
+text.write(line3)
+
+print (f'{name} the proccess complete, here is how what is writen inside your file now')
+text = open(script)
+
+read = text.read()
+print (read)
