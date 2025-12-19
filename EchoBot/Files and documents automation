@@ -56,4 +56,68 @@ print (f'{name} the proccess complete, here is how what is writen inside your fi
 text = open(script)
 
 read = text.read()
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+from sys import argv 
+
+file, script = argv 
+
+print ('welcome user to Echo Chat bot, can you give me your name')
+name = input('> ')
+
+print (f'is nice to meet you {name} my only function before any future update is reading and editing files')
+input ('> Press ENTER to continue:  ')
+
+print (f'the current file I have on my data base is {script}')
+input (f'> to continue press ENTER, or to leave press CTRL-C:  ')
+
+print (f'opening file {script}... \ncurrent text: ')
+text = open (script, 'r+')
+read = text.read()
+print (read)
+
+input (f'> Press continue if you want to edit what is written in {script} file, otherwise press CTRL-C to quit:  ')
+text.close()
+text = open (script, 'w')
+text.truncate()
+
+print (f'file has been cleaned succesfuly, its ready to be re-written again.')
+input (f'> Press ENTER if you want to edit the script {script} or CTRL-C to quit:  ')
+
+
+line1 = input ('> line1:  ')
+line2= input ('> line2:  ')
+line3 = input('> line3:  ')
+text.write(f'\n> {line1}\n> {line2}\n> {line3}')
+
+
+print (f'{name} the file overrite was successful, the new file content will be displayed down below')
+
+text = open(script, 'r')
+read = text.read()
+print (read)
+text.close()
+
+print (f'{name}You can add additional lines of text or you can quit')
+input('\n> press ENTER to continue:  ')
+
+text = open(script, 'a+')
+
+print ('write the additional lines below')
+line1 = input('> line1:  ') 
+line2 = input ('> line2:  ')
+line3 = input('> line3:  ')
+text.write(f'\n> {line1}\n> {line2}\n> {line3}')
+text.close()
+print ('your new file: ')
+
+text =open(script)
+read_a = text.read()
+print(read_a)
+text.close()
+
+
 print (read)
