@@ -114,6 +114,65 @@ text.write(f'\n> {line1}\n> {line2}\n> {line3}')
 text.close()
 print ('your new file: ')
 
+
+----------------------------------------------------------------------------------------------  ADDED FUNCTIONS AND IMPORTS -----------------------------------------------------------------------------------------------
+
+from sys import argv
+from os.path import exists
+
+main_file, from_script, to_script = argv
+
+print (f'Welcome user to echo chat bot this new feature is about transefing data from one script to another')
+input('> press ENTER to start or CTRL-C to quit')
+
+user = input (f'> choose your username: ')
+print (f'Your user name is saved as {user}')
+
+print (F'{user} the current file you are in is {main_file} and the script you will be using to trnsfer data is {from_script}')
+input('> press ENTER to view the script: ')
+
+first_s = open(from_script)
+fr = first_s.read()
+print (fr)
+
+print (f'analyzing the script.... the {from_script} is {len(fr)} bytes long')
+
+input (f'''press ENTER to confirm you've read the contents of the script {from_script}''')
+first_s.close()
+
+input (f'> before transfering the data to the {to_script} we need to verify it it exists, press ENTER to continue')
+print (f'analyzing {to_script}... the script {to_script} exists?:  {exists(to_script)}')
+
+print (f'{user} since you have decided to start the proccess now I will transfer the dara into the script {to_script}..')
+
+second_s = open(to_script,'w')
+second_s.write(fr)
+second_s.close()
+input (f'all done {user} if you want to review what is inside the script {to_script} press ENTER')
+second_s = open(to_script)
+rea = second_s.read()
+print (rea)
+first_s.close()
+
+print (f'you can add an extra three lines to the new {to_script} file besides the already added content')
+input('> to confirm press ENTER or to cancel press CTRL-C: ')
+second_s.close()
+second_s = open (to_script, 'a')
+line1 = input('> type a new line here: ')
+second_s.write(line1)
+second_s.close()
+
+input(f'> line added successfully to script {to_script} press ENTER to read it:  ')
+
+second_s = open(to_script)
+rea = second_s.read()
+print (rea)
+second_s.close()
+
+print (f'goood choice on using echobot {user}, come back any time you want. ')
+
+
+
 text =open(script)
 read_a = text.read()
 print(read_a)
