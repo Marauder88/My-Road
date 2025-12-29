@@ -83,6 +83,57 @@ model = input(s)
 print (f' so you are looking for a {brand} {model} veichle, which year edition {name}?')
 year = input(s)
 
+------------------------------------------------------------------------------------------------------------- CHECKPOINT -------------------------------------------------------------------------------------------
+
+def hotel (user):
+    print (f'welcome to the hotel Transilvania user {user} ')
+    input('> Press ENTER to continue')
+
+    budget = (int(input("> Enter your budget")))
+    room = budget / 2.8
+    services = room * 1.2
+    print (f'With a budget of ${budget: .1f},there is a room available of ${room: .1f} a night and services will cost ${services: .1f}')
+    input (f'> {user} the process has been completed press ENTER to exit')
+    return budget, room, services
+
+
+#print ('first is the actual function')
+#hotel('Sebas')
+
+
+#print('The second way to call the function here')
+ID = 'matador'
+#budg, habitacion, service = hotel(ID)
+
+def calculator(num):
+    input("> ENTER to begin")
+    print (f'your current number is {num: .1f} and it will go through operations')
+    fnum = num * 2
+    snum = fnum * 2
+    tnum = snum * 2
+    print (f'original number was {num: .1f}\nthen first number became {fnum: .1f}, second is {snum: .1f} and third and final number is {tnum: .1f}')
+    return fnum, snum, tnum
+    input ('> press ENTER')
+
+# print ('first way to call a function is')
+# calculator(200)
+
+# print ('second way to call the function is') 
+# num = 88172
+# calculator (num)   
+
+# print ('third way')
+new_number = 100000
+# fnum, snum, tnum = calculator(new_number)
+# print ('so with a new number of {}'.format(new_number),'\nThe first number would be', (fnum), 'second number would be', (snum), 'and third number would be', (tnum))
+
+new_number = new_number / 4.3
+random_number = new_number / 4.3
+
+random = calculator(new_number)
+
+print ('We would have {: .1f} as first number {: .1f} as second number {: .1f} as third number'.format(*random))
+
 print(f' that is awesome and what about your budget?')
 budget = input(s)
 
