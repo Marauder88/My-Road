@@ -85,6 +85,14 @@ year = input(s)
 
 ------------------------------------------------------------------------------------------------------------- CHECKPOINT -------------------------------------------------------------------------------------------
 
+# My understanding experience here was mainly the behaviour of the def functions and how to use the return function to be able to re-use variables stored inside a function block, also that must always use a placeholder if the 
+# argument has a function between the patenthesis ( ) or else the function will be waiting for an argument in order to execute the code block
+# python always reads code from top to bottom in order no matter what or how you type code
+# when trying to re use the variables from the previous def code block the return will allow you to do so or else you will get an error
+# input only interacts with strings, if you need a different data type for an iperation while using input you must convert it before: ex num = (int(input('> write any number)), make sure the data type goes accordingly or it could throw an error  
+# if you print a variable with many decimals use this format : .1f or : .2f, etc inside the {} where the variable would be placed
+# use the start symbol * to unpack a variable, etc and fill it up in more than one argument, its used when you need to unpack a variable that contains more than one data inside it and unpack it in two or more variables of text
+
 def hotel (user):
     print (f'welcome to the hotel Transilvania user {user} ')
     input('> Press ENTER to continue')
